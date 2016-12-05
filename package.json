@@ -1,0 +1,22 @@
+{
+  "name": "p2pistanbul",
+  "version": "0.1.0-alpha",
+  "description": "Example implementation for netzhuffle/P2PboardgameAPI with the boardgame Istanbul from Pegasus Spiele",
+  "devDependencies": {
+    "p2pboardgameapi": "netzhuffle/P2PboardgameAPI#c59cac0"
+  },
+  "scripts": {
+    "prepublish": "npm explore p2pboardgameapi -- npm install && cp node_modules/p2pboardgameapi/build/* src/ && cp node_modules/p2pboardgameapi/src/signaling.php src/ && cp node_modules/p2pboardgameapi/src/messages.db src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netzhuffle/P2Pistanbul.git"
+  },
+  "author": "Jannis Grimm <j@jannis.rocks> (http://jannis.rocks/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netzhuffle/P2Pistanbul/issues"
+  },
+  "homepage": "https://github.com/netzhuffle/P2Pistanbul#readme",
+  "private": true
+}
